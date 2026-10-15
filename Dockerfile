@@ -32,7 +32,4 @@ RUN	mkdir /etc/s6-overlay/s6-rc.d/svc-qui/dependencies.d && touch /etc/s6-overla
 RUN	touch /etc/s6-overlay/s6-rc.d/user/contents.d/svc-qui
 
 
-EXPOSE 8080/tcp
 EXPOSE 7476/tcp
-EXPOSE 6881/tcp
-EXPOSE 6881/udp
