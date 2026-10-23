@@ -18,10 +18,10 @@ services:
       - /volume3/media02/download:/media02/download
       - /volume4/media03/download:/media03/download
     ports:
-      - ${WEBUI_PORT}:8080
-      - ${TORRENTING_PORT}:${TORRENTING_PORT}
-      - ${TORRENTING_PORT}:${TORRENTING_PORT}/udp
-      - ${QUI_PORT}:7476
+      - ${WEBUI_PORT:-8080}:8080
+      - ${TORRENTING_PORT:-6881}:${TORRENTING_PORT:-6881}
+      - ${TORRENTING_PORT:-6881}:${TORRENTING_PORT:-6881}/udp
+      - ${QUI_PORT:-7476}:7476
     restart: unless-stopped
     networks:
       media-bridge:

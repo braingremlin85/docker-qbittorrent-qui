@@ -21,7 +21,7 @@ env:
   # github.repository as <account>/<repo>
   #IMAGE_NAME: ${{ github.repository }}
   REGISTRY_IMAGE: ${{ vars.DOCKERHUB_USERNAME }}/qbittorrent-qui
-  QBITTORRENT-QUI_VERSION: 5.2.4-1.32.0
+  QBITTORRENT-QUI_VERSION: 5.3.0-1.33.1
 
 jobs:
   build:
